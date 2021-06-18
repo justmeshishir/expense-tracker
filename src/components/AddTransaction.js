@@ -17,6 +17,12 @@ export const AddTransaction = () => {
         }
 
         addTransaction(newTransaction);
+        setDefault();
+    }
+
+    const setDefault = () => {
+        setText('');
+        setAmount(0);
     }
 
     return (
